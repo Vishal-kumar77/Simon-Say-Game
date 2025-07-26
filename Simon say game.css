@@ -34,3 +34,22 @@
 .userflash{
     background-color: green;
 }
+
+/* Start Button  */
+
+.button {
+    background-color: black;
+    color: azure;
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    display:inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    opacity:0.8
+}
+
+.button:hover{
+    font-size: larger;
+}

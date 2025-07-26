@@ -7,7 +7,9 @@ let started = false//started=false because game is not started yet
 let level = 0;
 let h3 = document.querySelector("h3");
 
-document.addEventListener("keypress", function () {
+let button = document.querySelector(".button");
+
+button.addEventListener("click", function () {
     if (started == false) {
         console.log("game is started ");
         started = true;
@@ -48,8 +50,6 @@ function levelup() {
 }
 
 function checkans(index) {
-    // console.log(`current level is:${level}`);
-    // let index=level-1;
 
     if (usersequence[index] === gamesequence[index]) {
         console.log("same value");
@@ -58,7 +58,7 @@ function checkans(index) {
         }
     }
     else {
-        h3.innerHTML = `Game over!.Your score is <b>${level}</b> <br>Press any key to start the game.`;
+        h3.innerHTML = `Game over!.Your score is <b>${level}</b> <br>Press Start button to start the game.`;
         document.querySelector("body").style.backgroundColor = "red";
         setTimeout(function () {
             document.querySelector("body").style.backgroundColor = "white";
